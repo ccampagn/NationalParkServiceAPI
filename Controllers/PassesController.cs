@@ -53,7 +53,8 @@ public class PassesController : ControllerBase
         {
             PassTypeId = request.PassTypeId,
             IssueDate = request.IssueDate,
-            ExpirationDate = request.ExpirationDate
+            ExpirationDate = request.ExpirationDate,
+            Active = request.Active
         };
 
         _context.Passes.Add(pass);
@@ -83,6 +84,7 @@ public class PassesController : ControllerBase
         pass.PassTypeId = request.PassTypeId;
         pass.IssueDate = request.IssueDate;
         pass.ExpirationDate = request.ExpirationDate;
+        pass.Active = request.Active;
 
         await _context.SaveChangesAsync();
 
