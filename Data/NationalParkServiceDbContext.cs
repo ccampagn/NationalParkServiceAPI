@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using NationalParkServiceAPI.Models;
 
+
 namespace NationalParkServiceAPI.Data;
 
 public class NationalParkServiceDbContext : DbContext
